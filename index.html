@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cybersecurity Tools</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background-image: url('https://i.imgur.com/zpZ4nFv.jpg'); /* صورة هاكر داكنة */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #c9d1d9;
+    }
+
+    .overlay {
+      background-color: rgba(13, 17, 23, 0.9);
+      padding: 50px 20px;
+      min-height: 100vh;
+    }
+
+    h1 {
+      color: #39ff14;
+      font-size: 2.8em;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .tool {
+      background: rgba(22, 27, 34, 0.9);
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 25px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 650px;
+      box-shadow: 0 0 12px rgba(0, 255, 0, 0.1);
+      text-align: center;
+    }
+
+    .tool h2 {
+      color: #58a6ff;
+      font-size: 1.6em;
+    }
+
+    .tool p {
+      font-size: 0.95em;
+      margin: 10px 0 20px;
+    }
+
+    .download-btn, .copy-btn {
+      background-color: #39ff14;
+      color: #0d1117;
+      border: none;
+      padding: 10px 22px;
+      margin: 6px;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .download-btn:hover, .copy-btn:hover {
+      background-color: #2ecc71;
+    }
+
+    .link {
+      margin-top: 12px;
+      font-size: 0.85em;
+      color: #8ab4f8;
+      word-break: break-word;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>🛡️ Professional Cybersecurity Tools</h1>
+
+    <div class="tool">
+      <h2>🔐 Password Cracker</h2>
+      <p>Crack passwords efficiently</p>
+      <a class="download-btn" href="PasswordCracker.zip" download>Download</a>
+      <button class="copy-btn" onclick="copy('PasswordCracker.zip')">Copy Link</button>
+      <div class="link" id="PasswordCracker.zip"></div>
+    </div>
+
+    <div class="tool">
+      <h2>📡 Packet Sniffer</h2>
+      <p>Analyze network traffic</p>
+      <a class="download-btn" href="PacketSniffer.zip" download>Download</a>
+      <button class="copy-btn" onclick="copy('PacketSniffer.zip')">Copy Link</button>
+      <div class="link" id="PacketSniffer.zip"></div>
+    </div>
+
+    <div class="tool">
+      <h2>📊 Port Scanner</h2>
+      <p>Scan open ports on targets</p>
+      <a class="download-btn" href="PortScanner.zip" download>Download</a>
+      <button class="copy-btn" onclick="copy('PortScanner.zip')">Copy Link</button>
+      <div class="link" id="PortScanner.zip"></div>
+    </div>
+
+    <div class="tool">
+      <h2>✉️ Email Spoofer</h2>
+      <p>Spoof sender email addresses (for ethical testing)</p>
+      <a class="download-btn" href="EmailSpoofer.zip" download>Download</a>
+      <button class="copy-btn" onclick="copy('EmailSpoofer.zip')">Copy Link</button>
+      <div class="link" id="EmailSpoofer.zip"></div>
+    </div>
+
+    <div class="tool">
+      <h2>🌐 Subdomain Finder</h2>
+      <p>Find hidden subdomains</p>
+      <a class="download-btn" href="SubdomainFinder.zip" download>Download</a>
+      <button class="copy-btn" onclick="copy('SubdomainFinder.zip')">Copy Link</button>
+      <div class="link" id="SubdomainFinder.zip"></div>
+    </div>
+
+    <div class="tool">
+      <h2>🔍 Web EnumMaster</h2>
+      <p>Enumerate web targets</p>
+      <a class="download-btn" href="WebEnumMaster.zip" download>Download</a>
+      <button class="copy-btn" onclick="copy('WebEnumMaster.zip')">Copy Link</button>
+      <div class="link" id="WebEnumMaster.zip"></div>
+    </div>
+
+    <div class="tool">
+      <h2>📶 NetScanner X</h2>
+      <p>Scan and discover network devices</p>
+      <a class="download-btn" href="NetScannerX.zip" download>Download</a>
+      <button class="copy-btn" onclick="copy('NetScannerX.zip')">Copy Link</button>
+      <div class="link" id="NetScannerX.zip"></div>
+    </div>
+
+    <div class="tool">
+      <h2>🔑 Hash CrackPy</h2>
+      <p>Crack common hashes (MD5, SHA1...)</p>
+      <a class="download-btn" href="HashCrackPy.zip" download>Download</a>
+      <button class="copy-btn" onclick="copy('HashCrackPy.zip')">Copy Link</button>
+      <div class="link" id="HashCrackPy.zip"></div>
+    </div>
+
+  </div>
+
+  <script>
+    function copy(file) {
+      const base = "https://taha7i.github.io/ttaha/";
+      const fullLink = base + file;
+      navigator.clipboard.writeText(fullLink).then(() => {
+        document.getElementById(file).innerText = "✔️ Link copied: " + fullLink;
+      });
+    }
+  </script>
+</body>
+</html>
